@@ -2,7 +2,7 @@ const completions = [{"snippet":"bot.start((ctx) => {})","type":"function"},{"sn
 
 
 const provider = {
-	selector: '.text.html, .source.jade, .text.css, .source.js, .text.html.php, .source.php',
+	selector: '.source.js',
 	disableForSelector: '.comment',
 	filterSuggestions: false,
 	suggestionPriority: 2,

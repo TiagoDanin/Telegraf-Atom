@@ -15,7 +15,10 @@
     "plugin",
     "auto",
     "complete",
-    "auto-complete"
+    "auto-complete",
+    "telegram",
+    "telegram-bot",
+    "bot"
   ],
   "scripts": {},
   "private": false,
@@ -44,5 +47,8 @@
     "telegraf": "3.25.5",
     "telegraf-test": "1.1.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
 }
