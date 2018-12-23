@@ -1,7 +1,7 @@
 {
   "name": "telegraf-atom",
   "main": "index.js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Auto-complete plugin for Telegraf methods",
   "author": {
     "name": "Tiago Danin",
