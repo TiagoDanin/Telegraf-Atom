@@ -1,0 +1,48 @@
+{
+  "name": "telegraf-atom",
+  "main": "index.js",
+  "version": "1.0.0",
+  "description": "Auto-complete plugin for Telegraf methods",
+  "author": {
+    "name": "Tiago Danin",
+    "email": "TiagoDanin@outlook.com",
+    "url": "https://TiagoDanin.github.io"
+  },
+  "license": "MIT",
+  "keywords": [
+    "telegraf",
+    "atom",
+    "plugin",
+    "auto",
+    "complete",
+    "auto-complete"
+  ],
+  "scripts": {},
+  "private": false,
+  "repository": "https://github.com/TiagoDanin/Telegraf-Atom.git",
+  "homepage": "https://TiagoDanin.github.io/Telegraf-Atom",
+  "bugs": "https://github.com/TiagoDanin/Telegraf-Atom/issues",
+  "github": {
+    "name": "Telegraf-Atom",
+    "owner": "TiagoDanin"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "build.js",
+    "index.js",
+    "package.json"
+  ],
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "devDependencies": {
+    "telegraf": "3.25.5",
+    "telegraf-test": "1.1.0"
+  },
+  "dependencies": {}
+}
