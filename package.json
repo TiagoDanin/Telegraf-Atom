@@ -44,7 +44,7 @@
     }
   },
   "devDependencies": {
-    "telegraf": "3.26.0",
+    "telegraf": "3.27.0",
     "telegraf-test": "1.1.0"
   },
   "dependencies": {},
