@@ -17,21 +17,21 @@ const ingore = [
 ]
 
 //https://stackoverflow.com/questions/1007981/how-to-get-function-parameter-names-values-dynamically/29123804#29123804
-var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg
-var ARGUMENT_NAMES = /(?:^|,)\s*([^\s,=]+)/g
+let STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg
+let ARGUMENT_NAMES = /(?:^|,)\s*([^\s,=]+)/g
 const getFunctionParameters = (func, isCtx) => {
-	var fnStr = func.toString().replace(STRIP_COMMENTS, '')
-	var argsList = fnStr.slice(fnStr.indexOf('(')+1, fnStr.indexOf(')'))
-	var result = argsList.match(ARGUMENT_NAMES)
+	let fnStr = func.toString().replace(STRIP_COMMENTS, '')
+	let argsList = fnStr.slice(fnStr.indexOf('(')+1, fnStr.indexOf(')'))
+	let result = argsList.match(ARGUMENT_NAMES)
 
 	if(result === null) {
 		return []
 	}
 	else {
-		var stripped = []
-		var n = 0
-		for (var i = 0; i < result.length; i++) {
-			var name = result[i].replace(/[\s,]/g, '')
+		let stripped = []
+		let n = 0
+		for (let i = 0; i < result.length; i++) {
+			let name = result[i].replace(/[\s,]/g, '')
 			if (name == 'extra') {
 				name = '{}'
 			}
@@ -48,12 +48,12 @@ const createFuncText = (f, prefix, funcName) => {
 	if (ingore.includes(funcName)) {
 		return {
 			text: `${prefix}${funcName}`,
-			type: 'variable',
+			type: 'letiable',
 		}
 	}
 	let func = f[funcName]
 	if (typeof func == 'function') {
-		var params = getFunctionParameters(func)
+		let params = getFunctionParameters(func)
 		if (params.length == 0) {
 			func = funcName.replace(/^reply(with)*(html|markdown)*/i, 'send')
 			if (func == 'send') {
@@ -68,16 +68,16 @@ const createFuncText = (f, prefix, funcName) => {
 	}
 	return {
 		text: `${prefix}${funcName}`,
-		type: 'variable'
+		type: 'letiable'
 	}
 }
 
-var tgFunc = Object.getOwnPropertyNames(Object.getPrototypeOf(bot.telegram))
+let tgFunc = Object.getOwnPropertyNames(Object.getPrototypeOf(bot.telegram))
 bot.hears(/start/i, async (ctx) => {
-	var rBot = tgFunc.map((funcName) => createFuncText(bot.telegram, 'bot.telegram.', funcName))
+	let rBot = tgFunc.map((funcName) => createFuncText(bot.telegram, 'bot.telegram.', funcName))
 
 	tgFunc = Object.getOwnPropertyNames(Object.getPrototypeOf(ctx))
-	var rCtx = tgFunc.map((funcName) => createFuncText(ctx, 'ctx.', funcName))
+	let rCtx = tgFunc.map((funcName) => createFuncText(ctx, 'ctx.', funcName))
 
 	const output = [
 		{
