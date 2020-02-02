@@ -389,10 +389,10 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
 
-telegraf-test@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/telegraf-test/-/telegraf-test-1.1.1.tgz#6916db67db0ab56e4b0d33dbddacdef039d80bf4"
-  integrity sha512-4vqIiuMJpM4aVpbfDP7QmEci86jMgvUEcH+fKXT5qePOU0xQRj48YrbsEPXR+PWkwjB2TLK/mYIuwkF98jyVJA==
+telegraf-test@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/telegraf-test/-/telegraf-test-1.2.0.tgz#2035cb4cde45e8b9a4a8cf2995101709f5204cb5"
+  integrity sha512-bXm291FPcqSCTkrl6gW/UIOJq0A90m19hVmn8+JuBK/7fyVTAHYwz6X41aUj7V4gu2dMraC38gT/miS2XpVi6w==
   dependencies:
     axios "^0.19.0"
     debug "^4.1.1"
