@@ -20,13 +20,12 @@ array-flatten@1.1.1:
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
   integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
 
-axios@^0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.0.tgz#8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8"
-  integrity sha512-1uvKqKQta3KBxIz14F2v06AEHZ/dIoeKfbTRkK1E5oqjDnuEerLmYTgJB5AiQZHJcljpg1TuRzdjDR06qNk0DQ==
+axios@^0.19.2:
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
   dependencies:
     follow-redirects "1.5.10"
-    is-buffer "^2.0.2"
 
 body-parser@1.19.0:
   version "1.19.0"
@@ -223,11 +222,6 @@ ipaddr.js@1.9.0:
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.0.tgz#37df74e430a0e47550fe54a2defe30d8acd95f65"
   integrity sha512-M4Sjn6N/+O6/IXSJseKqHoFc+5FdGJ22sXqnjTpdZweHK64MzEPAyQZyEU3R/KRv2GLoa7nNtg/C2Ev6m7z+eA==
 
-is-buffer@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.3.tgz#4ecf3fcf749cbd1e472689e109ac66261a25e725"
-  integrity sha512-U15Q7MXTuZlrbymiz95PJpZxu8IlipAp4dtS3wOdgPXx3mqBnslrWU14kxfHB+Py/+2PVKSr37dMAgM2A4uArw==
-
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -389,12 +383,12 @@ setprototypeof@1.1.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
 
-telegraf-test@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/telegraf-test/-/telegraf-test-1.2.0.tgz#2035cb4cde45e8b9a4a8cf2995101709f5204cb5"
-  integrity sha512-bXm291FPcqSCTkrl6gW/UIOJq0A90m19hVmn8+JuBK/7fyVTAHYwz6X41aUj7V4gu2dMraC38gT/miS2XpVi6w==
+telegraf-test@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/telegraf-test/-/telegraf-test-1.2.1.tgz#faebe4a1000e2856708935bdf798243e7c1e54e9"
+  integrity sha512-y1vNUxXvhpHA3g7NljRlJklwrEIuuDReNBq2gy1GKR+S/D/9TOKWivuElp5M5l9QGWvaK8UcHiRezh1wDytd9g==
   dependencies:
-    axios "^0.19.0"
+    axios "^0.19.2"
     debug "^4.1.1"
     express "^4.17.1"
 

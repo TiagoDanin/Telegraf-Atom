@@ -53,7 +53,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"telegraf": "^3.36.0",
-		"telegraf-test": "^1.2.0"
+		"telegraf-test": "^1.2.1"
 	},
 	"providedServices": {
 		"autocomplete.provider": {
