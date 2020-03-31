@@ -52,7 +52,7 @@
 	],
 	"dependencies": {},
 	"devDependencies": {
-		"telegraf": "^3.36.0",
+		"telegraf": "^3.37.0",
 		"telegraf-test": "^1.2.1"
 	},
 	"providedServices": {
